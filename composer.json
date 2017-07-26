@@ -16,8 +16,8 @@
         }
     },
     "require": {
-        "laravel/framework": "5.2.*",
-        "leo108/php_cas_server_oauth_plugin_center": "@dev",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*",
+        "leo108/php_cas_server_oauth_plugin_center": "1.*",
         "overtrue/socialite": "^1.0"
     }
 }
