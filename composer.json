@@ -17,7 +17,7 @@
     },
     "require": {
         "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*",
-        "leo108/php_cas_server_oauth_plugin_center": "1.*",
+        "leo108/php_cas_server_oauth_plugin_center": "2.*",
         "overtrue/socialite": "^1.0"
     }
 }

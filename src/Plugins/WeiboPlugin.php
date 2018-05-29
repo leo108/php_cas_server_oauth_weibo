@@ -43,12 +43,13 @@ class WeiboPlugin extends Plugin
 
     /**
      * @param Request $request
+     * @param string  $callback
      * @return OAuthUser
      */
-    public function getOAuthUser(Request $request)
+    public function getOAuthUser(Request $request, $callback = null)
     {
         /* @var User $user */
-        $user      = app('cas.server.weibo')->setRequest($request)->user();
+        $user      = app('cas.server.weibo')->setRequest($request)->setRedirectUrl($callback)->user();
         $oauthUser = new OAuthUser();
         $oauthUser->setId($user->getId())
             ->setName($user->getName())
